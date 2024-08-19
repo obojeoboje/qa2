@@ -1,0 +1,101 @@
+.header {
+  width: 100%;
+  background-color: #6462f1;
+  padding-bottom: 50px;
+  overflow: hidden;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 70px;
+  margin-bottom: 100px;
+}
+
+.navLeft {
+  display: flex;
+  gap: 118px;
+  align-items: center;
+}
+
+.navLeft h2 {
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navList {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navItem {
+  list-style: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navButton button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #9391f9;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mainContent h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.ribbons {
+  position: relative;
+}
+
+.main {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.leftInfo {
+  text-align: center;
+}
+
+.rightInfo {
+  text-align: center;
+}
+
+.tarifBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarifBtn button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}

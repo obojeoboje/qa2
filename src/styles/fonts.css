@@ -1,0 +1,14 @@
+/* src/styles/fonts.css */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/HelveticaNeue-Roman.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/HelveticaNeue-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
