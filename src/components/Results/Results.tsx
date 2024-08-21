@@ -4,6 +4,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import WestIcon from '@mui/icons-material/West';
+import EastIcon from '@mui/icons-material/East';
+
 import styles from './index.module.css';
 
 const data = [
@@ -45,6 +48,30 @@ const data = [
     rotate: '-5deg',
     bgCardNumber: '#E6E6E6',
   },
+  {
+    id: 3,
+    name: 'Максим',
+    age: 25,
+    pointA: '3 месяца самообучения. Продавец на островке в ТЦ.',
+    pointB:
+      'Через 3 недели после начала менторства получает оффер на первом же собеседовании — 184 тыс. ₽ на руки в видеоплатформу.',
+    bgColor: '#fff',
+    color: '#000',
+    rotate: '-5deg',
+    bgCardNumber: '#E6E6E6',
+  },
+  {
+    id: 3,
+    name: 'Максим',
+    age: 25,
+    pointA: '3 месяца самообучения. Продавец на островке в ТЦ.',
+    pointB:
+      'Через 3 недели после начала менторства получает оффер на первом же собеседовании — 184 тыс. ₽ на руки в видеоплатформу.',
+    bgColor: '#fff',
+    color: '#000',
+    rotate: '-5deg',
+    bgCardNumber: '#E6E6E6',
+  },
 ];
 
 const Results = () => {
@@ -53,8 +80,12 @@ const Results = () => {
       <div className={styles.sliderTitle}>
         <h3>Результаты учеников</h3>
         <div className={styles.navigationButtons}>
-          <button className={styles.prevButton}>←</button>
-          <button className={styles.nextButton}>→</button>
+          <button className={styles.prevButton}>
+            <WestIcon />
+          </button>
+          <button className={styles.nextButton}>
+            <EastIcon />
+          </button>
         </div>
       </div>
       <Swiper
@@ -84,7 +115,7 @@ const Results = () => {
                 >
                   {item.id}
                 </div>
-                <h3 style={{ border: `1px solid ${item.color}` }}>
+                <h3 style={{ border: `1px solid ${item.bgCardNumber}` }}>
                   {item.name}, {item.age}
                 </h3>
               </div>

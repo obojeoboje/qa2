@@ -18,9 +18,15 @@
   font-weight: 500;
 }
 
-.title img {
+.happy {
   position: absolute;
   bottom: 0;
+}
+
+.star {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .content {

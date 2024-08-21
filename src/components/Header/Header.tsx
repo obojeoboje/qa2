@@ -1,6 +1,6 @@
 import styles from './index.module.css';
 
-import ribbons from '../../assets/images/ribbons.png';
+import ribbons from '../../assets/images/ribbons.webp';
 import main from '../../assets/images/main.webp';
 
 const Header = () => {

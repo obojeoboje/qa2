@@ -1,5 +1,7 @@
 import styles from './index.module.css';
 
+import star from '../../assets/images/star-2.webp';
+
 const Tarifs = () => {
   return (
     <div className={styles.tarifs}>
@@ -17,6 +19,7 @@ const Tarifs = () => {
           className={styles.tarifsCard}
           style={{ backgroundColor: '#010101', color: '#fff' }}
         >
+          <img src={star} alt="Star" className={styles.star} />
           <div
             className={styles.tarifsCardTitle}
             style={{ marginBottom: '40px' }}

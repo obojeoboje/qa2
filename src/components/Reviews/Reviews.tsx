@@ -3,10 +3,15 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { Swiper as SwiperType } from 'swiper';
 
-import tg from '../../assets/images/telegram.png';
+import tg from '../../assets/images/telegram.webp';
+
+import WestIcon from '@mui/icons-material/West';
+import EastIcon from '@mui/icons-material/East';
 
 import styles from './index.module.css';
+import { useEffect, useState } from 'react';
 
 const data = [
   {
@@ -42,6 +47,26 @@ const data = [
 ];
 
 const Reviews = () => {
+  const [swiper, setSwiper] = useState<SwiperType | null>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+
+  useEffect(() => {
+    if (swiper) {
+      const checkButtons = () => {
+        setIsBeginning(swiper.isBeginning);
+        setIsEnd(swiper.isEnd);
+      };
+
+      swiper.on('slideChange', checkButtons);
+      checkButtons();
+
+      return () => {
+        swiper.off('slideChange', checkButtons);
+      };
+    }
+  }, [swiper]);
+
   return (
     <div className={styles.reviews}>
       <div className={styles.reviewsTitle}>
@@ -52,11 +77,22 @@ const Reviews = () => {
         <div className={styles.reviewsContentTitle}>
           <div className={styles.pagination}></div>
           <div className={styles.navigationButtons}>
-            <button className={styles.prevButton}>←</button>
-            <button className={styles.nextButton}>→</button>
+            <button
+              className={`${styles.prevButton} ${
+                !isBeginning ? styles.active : ''
+              }`}
+            >
+              <WestIcon />
+            </button>
+            <button
+              className={`${styles.nextButton} ${!isEnd ? styles.active : ''}`}
+            >
+              <EastIcon />
+            </button>
           </div>
         </div>
         <Swiper
+          onSwiper={(swiper) => setSwiper(swiper)}
           slidesPerView={1}
           spaceBetween={30}
           pagination={{ type: 'fraction', el: `.${styles.pagination}` }}

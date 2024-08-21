@@ -1,16 +1,18 @@
 import styles from './index.module.css';
 
 import happy from '../../assets/images/happy.webp';
+import star from '../../assets/images/star-1.webp';
 
 const WhyTrustMe = () => {
   return (
     <div className={styles.whyTrustMe}>
       <div className={styles.title}>
+        <img src={star} alt="Star" className={styles.star} />
         <h2>
           Почему стоит
           <br /> мне доверять
         </h2>
-        <img src={happy} alt="Happy" />
+        <img src={happy} alt="Happy" className={styles.happy} />
       </div>
       <div className={styles.content}>
         <div className={styles.contentItem}>

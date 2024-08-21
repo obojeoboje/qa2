@@ -2,16 +2,21 @@
   color: #000;
   padding: 200px 80px;
   display: flex;
-  gap: 480px;
+  justify-content: space-between;
 }
 
 .aboutTitle {
+  width: 50%;
   white-space: nowrap;
 }
 
 .aboutTitle h2 {
   font-size: 48px;
   font-weight: 500;
+}
+
+.aboutRight {
+  width: 50%;
 }
 
 .aboutRight h3 {
@@ -21,7 +26,21 @@
 }
 
 .aboutText {
+  width: 100%;
   display: flex;
   gap: 14px;
   align-items: center;
+  line-height: 140%;
+}
+
+@media all and (min-width: 1770px) {
+  .aboutText {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 2560px) {
+  .aboutText {
+    width: 50%;
+  }
 }

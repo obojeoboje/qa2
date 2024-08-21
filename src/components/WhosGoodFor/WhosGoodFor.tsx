@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import SouthIcon from '@mui/icons-material/South';
+import NorthIcon from '@mui/icons-material/North';
 
 import tired from '../../assets/images/tired.webp';
 import smile from '../../assets/images/smile.webp';
@@ -39,6 +39,16 @@ const WhosGoodFor = () => {
     setIsOpen(id === isOpen ? null : id);
   };
 
+  const renderDescription = (description: string) => {
+    const maxChars = 50;
+    if (isOpen) {
+      return description;
+    }
+    return description.length > maxChars
+      ? description.slice(0, maxChars) + '...'
+      : description;
+  };
+
   return (
     <div className={styles.whosGood}>
       <h3>Кому подойдет курс</h3>
@@ -55,16 +65,14 @@ const WhosGoodFor = () => {
               }`}
             >
               <p className={styles.description}>
-                {isOpen
-                  ? item.description
-                  : `${item.description.slice(0, 150)}...`}
+                {renderDescription(item.description)}
               </p>
             </div>
             <div
               className={styles.expandIcon}
               onClick={() => handleClick(item.id)}
             >
-              {isOpen ? <ArrowUpwardIcon /> : <ArrowDownwardIcon />}
+              {isOpen ? <NorthIcon /> : <SouthIcon />}
             </div>
           </div>
         ))}
