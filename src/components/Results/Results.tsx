@@ -57,7 +57,7 @@ const data = [
       'Через 3 недели после начала менторства получает оффер на первом же собеседовании — 184 тыс. ₽ на руки в видеоплатформу.',
     bgColor: '#fff',
     color: '#000',
-    rotate: '-5deg',
+    rotate: '5deg',
     bgCardNumber: '#E6E6E6',
   },
   {
@@ -90,7 +90,7 @@ const Results = () => {
       </div>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={40}
         navigation={{
           nextEl: `.${styles.nextButton}`,
           prevEl: `.${styles.prevButton}`,

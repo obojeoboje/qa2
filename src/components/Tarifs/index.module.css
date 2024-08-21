@@ -24,9 +24,9 @@
 .tarifsTitleBtn button {
   padding: 10px 30px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #979797;
   background-color: #fff;
   cursor: pointer;
 }
@@ -68,6 +68,7 @@
   flex-direction: column;
   gap: 5px;
   margin-bottom: 40px;
+  line-height: 140%;
 }
 
 .tarifsCardBtn button {
@@ -78,5 +79,5 @@
   cursor: pointer;
   background-color: #fff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }

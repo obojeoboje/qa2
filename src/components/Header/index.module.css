@@ -101,5 +101,7 @@
   border-radius: 30px;
   border: none;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
+  background-color: #fff;
+  cursor: pointer;
 }
