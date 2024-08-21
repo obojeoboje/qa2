@@ -39,6 +39,12 @@
   width: 40%;
 }
 
+.secondBlock p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 .secondBlock h4 {
   font-size: 32px;
   font-weight: 500;
