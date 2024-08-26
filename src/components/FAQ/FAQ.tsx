@@ -175,8 +175,10 @@ const Faq = () => {
       {mobile && (
         <div className={styles.formatBtn}>
           <button>
-            Связаться со мной
-            <img src={tg} alt="telegram" width="30" height="30" />{' '}
+            <a href=" https://t.me/Polynskih" target="_blank">
+              Связаться со мной
+              <img src={tg} alt="telegram" width="30" height="30" />{' '}
+            </a>
           </button>
         </div>
       )}
