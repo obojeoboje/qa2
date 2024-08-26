@@ -54,10 +54,7 @@ const Tarifs = () => {
           className={styles.tarifsCard}
           style={{ backgroundColor: '#E1EAFF' }}
         >
-          <div
-            className={styles.tarifsCardTitle}
-            style={{ marginBottom: '130px' }}
-          >
+          <div className={styles.tarifsCardTitle}>
             <p>Оплатить сразу</p>
             <h3>90 000 ₽</h3>
           </div>

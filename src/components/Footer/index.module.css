@@ -117,28 +117,22 @@
   }
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1075px) {
   .footer {
-    padding: 70px 15px;
-  }
-}
-
-@media all and (max-width: 760px) {
-  .footer {
-    padding: 70px 15px 180px;
+    padding: 70px 15px 280px;
     overflow: hidden;
     border-top-right-radius: 40px;
+  }
+
+  .imageBlock img {
+    width: 450px;
+    height: 450px;
+    top: 510px;
   }
 
   .secondBlockContent {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .imageBlock img {
-    width: 400px;
-    height: 400px;
-    top: 610px;
   }
 
   .firstBlock button {
@@ -158,29 +152,35 @@
   }
 }
 
-@media all and (max-width: 655px) {
-  .footer {
-    padding: 70px 15px 280px;
+@media all and (max-width: 920px) {
+  .imageBlock img {
+    top: 550px;
   }
 
-  .imageBlock img {
-    top: 700px;
+  br {
+    display: none;
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 540px) {
+  .imageBlock img {
+    width: 380px;
+    height: 380px;
+    top: 620px;
+  }
+}
+
+@media all and (max-width: 470px) {
   .firstBlock p {
     font-size: 14px;
   }
 
   .imageBlock img {
-    width: 300px;
-    height: 300px;
-    top: 750px;
+    top: 660px;
   }
 }
 
-@media all and (max-width: 380px) {
+@media all and (max-width: 382px) {
   .firstBlock p {
     font-size: 14px;
   }
@@ -189,7 +189,7 @@
     font-size: 14px;
   }
 
-  br {
-    display: none;
+  .imageBlock img {
+    top: 700px;
   }
 }

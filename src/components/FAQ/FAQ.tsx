@@ -11,11 +11,11 @@ import tg from '../../assets/images/telegram.svg';
 
 const Faq = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
-  const [mobile, setMobile] = useState(window.innerWidth <= 645);
+  const [mobile, setMobile] = useState(window.innerWidth <= 945);
 
   useEffect(() => {
     const handleResize = () => {
-      setMobile(window.innerWidth <= 645);
+      setMobile(window.innerWidth <= 945);
     };
 
     window.addEventListener('resize', handleResize);

@@ -120,7 +120,7 @@
   }
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1150px) {
   .reviews {
     flex-direction: column;
   }
@@ -149,6 +149,10 @@
 
   .reviewsTitle p {
     font-size: 48px;
+  }
+
+  br {
+    display: none;
   }
 }
 

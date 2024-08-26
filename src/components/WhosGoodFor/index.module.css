@@ -120,7 +120,7 @@
   }
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1300px) {
   .whosGood {
     padding: 200px 0;
   }
@@ -128,31 +128,60 @@
   .whosGoodTitle {
     padding: 0 15px;
   }
-
-  .navigationButtons {
-    display: flex;
-  }
-
-  .cardsContainer {
-    margin: 0 65px;
-  }
 }
 
-@media all and (max-width: 805px) {
-  .cardsContainer {
-    margin: 0;
-    padding: 0 15px;
-  }
-
+@media all and (max-width: 1265px) {
   .imageContainer img {
     width: 324px;
     height: 324px;
   }
 }
 
+@media all and (max-width: 1125px) {
+  .card {
+    padding: 10px 10px 50px 10px;
+  }
+}
+
+@media all and (max-width: 1030px) {
+  .imageContainer img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .imageContainer img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media all and (max-width: 840px) {
+  .imageContainer img {
+    width: 230px;
+    height: 230px;
+  }
+}
+
 @media all and (max-width: 730px) {
+  .navigationButtons {
+    display: flex;
+  }
+
+  .imageContainer img {
+    width: 520px;
+    height: 520px;
+  }
+
   .card {
     flex: none;
+    padding: 30px 30px 50px 30px;
+  }
+
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: #fff;
   }
 }
 
@@ -167,23 +196,58 @@
   }
 }
 
+@media all and (max-width: 570px) {
+  .imageContainer img {
+    width: 420px;
+    height: 420px;
+  }
+}
+
 @media all and (max-width: 480px) {
   .card {
     padding: 5px 5px 50px 5px;
   }
 
-  .imageContainer img {
-    width: 290px;
-    height: 290px;
+  .description {
+    margin-right: 100px;
   }
 }
 
-@media all and (max-width: 380px) {
+@media all and (max-width: 430px) {
   .whosGood h3 {
     font-size: 32px;
   }
 
   .card h3 {
     font-size: 20px;
+  }
+
+  .imageContainer img {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .whosGood h3 {
+    font-size: 24px;
+  }
+
+  .imageContainer img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .prevButton,
+  .nextButton {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 335px) {
+  .imageContainer img {
+    width: 280px;
+    height: 280px;
   }
 }

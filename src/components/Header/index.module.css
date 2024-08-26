@@ -177,14 +177,14 @@
 .drawerStar {
   position: absolute;
   top: 110px;
-  right: 0;
+  right: 20px;
 }
 
 .drawerFreeBtn {
   display: none;
 }
 
-@media all and (max-width: 805px) {
+@media all and (max-width: 885px) {
   .navList {
     display: none;
   }
@@ -214,20 +214,13 @@
   }
 }
 
-@media all and (max-width: 645px) {
-  .drawerFreeBtn {
-    display: block;
-  }
-
-  .navButton button {
-    display: none;
-  }
-
+@media all and (max-width: 800px) {
   .mainContent h1 {
-    font-size: 48px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
+}
 
+@media all and (max-width: 768px) {
   .info {
     width: 100%;
     flex-direction: column;
@@ -242,6 +235,20 @@
 
   .rightInfo {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 645px) {
+  .drawerFreeBtn {
+    display: block;
+  }
+
+  .navButton button {
+    display: none;
+  }
+
+  .mainContent h1 {
+    font-size: 48px;
   }
 
   .ribbons {

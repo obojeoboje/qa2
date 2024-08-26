@@ -140,7 +140,7 @@
   }
 }
 
-@media all and (max-width: 731px) {
+@media all and (max-width: 880px) {
   .card {
     width: 100%;
   }
@@ -150,9 +150,9 @@
   }
 }
 
-@media all and (max-width: 380px) {
-  .card {
-    width: 320px;
+@media all and (max-width: 452px) {
+  .sliderTitle h3 {
+    font-size: 32px;
   }
 
   .cardHeader h3 {
@@ -165,5 +165,21 @@
 
   .point p {
     font-size: 14px;
+  }
+
+  .card {
+    padding: 20px 15px 0;
+  }
+}
+
+@media all and (max-width: 355px) {
+  .sliderTitle h3 {
+    font-size: 24px;
+  }
+
+  .prevButton,
+  .nextButton {
+    font-size: 16px;
+    padding: 20px;
   }
 }

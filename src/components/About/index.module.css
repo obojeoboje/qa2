@@ -33,16 +33,22 @@
   line-height: 140%;
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1140px) {
   .aboutText {
     flex-direction: column;
     gap: 30px;
   }
 }
 
+@media all and (max-width: 1024px) {
+  .about {
+    padding: 150px 50px;
+  }
+}
+
 @media all and (max-width: 805px) {
   .about {
-    padding: 150px 15px;
+    padding: 100px 15px;
   }
 
   .aboutTitle h2 {
@@ -70,5 +76,11 @@
 
   .aboutRight h3 {
     margin-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  br {
+    display: none;
   }
 }

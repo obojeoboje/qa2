@@ -70,25 +70,7 @@
   color: #222222;
 }
 
-@media all and (max-width: 805px) {
-  .format {
-    padding: 150px 15px;
-  }
-
-  .formatLeft h3 {
-    font-size: 40px;
-  }
-
-  .customAccordionSummary {
-    font-size: 20px !important;
-  }
-
-  .customAccordionText {
-    font-size: 16px !important;
-  }
-}
-
-@media all and (max-width: 645px) {
+@media all and (max-width: 945px) {
   .format {
     flex-direction: column;
   }
@@ -107,6 +89,24 @@
 
   .formatBtn button a {
     justify-content: center;
+  }
+}
+
+@media all and (max-width: 805px) {
+  .format {
+    padding: 150px 15px;
+  }
+
+  .formatLeft h3 {
+    font-size: 40px;
+  }
+
+  .customAccordionSummary {
+    font-size: 20px !important;
+  }
+
+  .customAccordionText {
+    font-size: 16px !important;
   }
 }
 

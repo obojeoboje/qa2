@@ -71,14 +71,18 @@
   color: #222222;
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1075px) {
   .format {
     padding: 70px 15px;
     gap: 93px;
   }
+
+  br {
+    display: none;
+  }
 }
 
-@media all and (max-width: 805px) {
+@media all and (max-width: 895px) {
   .formatLeft h3 {
     font-size: 40px;
   }
@@ -97,12 +101,6 @@
     justify-content: center;
     align-items: center;
   }
-}
-
-@media all and (max-width: 645px) {
-  .formatLeft h3 {
-    font-size: 36px;
-  }
 
   .format {
     flex-direction: column;
@@ -114,6 +112,12 @@
 
   .formatBtn button {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 645px) {
+  .formatLeft h3 {
+    font-size: 36px;
   }
 }
 
