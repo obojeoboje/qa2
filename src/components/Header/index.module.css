@@ -183,7 +183,7 @@
   display: none;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 805px) {
   .navList {
     display: none;
   }
@@ -213,7 +213,7 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 645px) {
   .drawerFreeBtn {
     display: block;
   }

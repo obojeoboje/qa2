@@ -104,7 +104,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 805px) {
   .tarifs {
     padding: 0 0 200px;
   }
@@ -131,7 +131,7 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 645px) {
   .tarifsTitle {
     flex-direction: column;
     align-items: start;
@@ -149,7 +149,7 @@
   }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 380px) {
   .tarifsTitleInfo h3 {
     font-size: 32px;
   }

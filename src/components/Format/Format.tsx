@@ -42,12 +42,12 @@ const Format = () => {
 
         {!mobile && (
           <div className={styles.formatBtn}>
-            <button>
-              <a href="https://t.me/Polynskih_channel" target="_blank">
+            <a href="https://t.me/Polynskih_channel" target="_blank">
+              <button>
                 Мой канал в телеграм
                 <img src={tg} alt="telegram" width="30" height="30" />{' '}
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         )}
       </div>

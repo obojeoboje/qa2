@@ -79,13 +79,13 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 805px) {
   .title h2 {
     font-size: 40px;
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 645px) {
   .title h2 {
     font-size: 36px;
     padding-left: 15px;
@@ -101,7 +101,7 @@
   }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 380px) {
   .title {
     height: 360px;
   }

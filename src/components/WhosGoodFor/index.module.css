@@ -137,7 +137,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 805px) {
   .cardsContainer {
     margin: 0;
     padding: 0 15px;
@@ -149,18 +149,18 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 645px) {
   .whosGood h3 {
     font-size: 36px;
   }
 
   .card {
-    width: 100% !important; /* Карточка занимает всю ширину */
+    width: 100% !important;
     flex: none;
   }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 380px) {
   .whosGood h3 {
     font-size: 32px;
   }

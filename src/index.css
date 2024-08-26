@@ -24,6 +24,8 @@ body::-webkit-scrollbar {
 
 button {
   font-family: 'Helvetica', sans-serif;
+  -webkit-appearance: none;
+  text-decoration: none;
 }
 
 a {

@@ -77,7 +77,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 805px) {
   .formatLeft h3 {
     font-size: 40px;
   }
@@ -91,7 +91,7 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 645px) {
   .formatLeft h3 {
     font-size: 36px;
   }
@@ -105,12 +105,15 @@
   }
 
   .formatBtn button {
-    justify-content: center;
     width: 100%;
+  }
+
+  .formatBtn button a {
+    justify-content: center;
   }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 380px) {
   .formatLeft h3 {
     font-size: 32px;
   }

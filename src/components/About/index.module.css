@@ -40,7 +40,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 805px) {
   .about {
     padding: 150px 15px;
   }
@@ -54,7 +54,7 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 645px) {
   .about {
     flex-direction: column;
     gap: 50px;

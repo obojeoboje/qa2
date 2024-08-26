@@ -116,7 +116,7 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 645px) {
   .footer {
     padding: 70px 15px 500px;
     overflow: hidden;
@@ -149,7 +149,7 @@
   }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 380px) {
   .firstBlock p {
     font-size: 14px;
   }
