@@ -112,12 +112,12 @@ const data = [
 ];
 
 const Results = () => {
-  const [table, setTable] = useState(window.innerWidth <= 960);
+  const [table, setTable] = useState(window.innerWidth <= 1200);
   const [mobile, setMobile] = useState(window.innerWidth <= 730);
 
   useEffect(() => {
     const handleResize = () => {
-      setTable(window.innerWidth <= 960);
+      setTable(window.innerWidth <= 1200);
       setMobile(window.innerWidth <= 730);
     };
 

@@ -7,11 +7,11 @@ import footerBoy2 from '../../assets/images/footer-boy-2.webp';
 import styles from './index.module.css';
 
 const Footer = () => {
-  const [table, setTable] = useState(window.innerWidth <= 960);
+  const [table, setTable] = useState(window.innerWidth <= 1300);
 
   useEffect(() => {
     const handleResize = () => {
-      setTable(window.innerWidth <= 960);
+      setTable(window.innerWidth <= 1300);
     };
 
     window.addEventListener('resize', handleResize);
