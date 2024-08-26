@@ -53,7 +53,7 @@
 }
 
 .descriptionContainer.open {
-  max-height: 200px;
+  max-height: 350px;
 }
 
 .description {
@@ -206,7 +206,7 @@
 
 @media all and (max-width: 480px) {
   .card {
-    padding: 5px 5px 50px 5px;
+    padding: 10px 10px 50px 10px;
   }
 
   .description {
