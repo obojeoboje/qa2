@@ -7,9 +7,9 @@ import NorthIcon from '@mui/icons-material/North';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
 
-import tired from '../../assets/images/tired.svg';
-import smile from '../../assets/images/smile.svg';
-import sad from '../../assets/images/sad.svg';
+import tired from '../../assets/images/tired.webp';
+import smile from '../../assets/images/smile.webp';
+import sad from '../../assets/images/sad.webp';
 
 import styles from './index.module.css';
 

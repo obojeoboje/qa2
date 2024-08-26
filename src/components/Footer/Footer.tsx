@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
 import tg from '../../assets/images/telegram.svg';
-import footerBoy from '../../assets/images/footer-boy.svg';
-import footerBoy2 from '../../assets/images/footer-boy-2.svg';
+import footerBoy from '../../assets/images/footer-boy.webp';
+import footerBoy2 from '../../assets/images/footer-boy-2.webp';
 
 import styles from './index.module.css';
 

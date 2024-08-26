@@ -4,7 +4,7 @@ import { Drawer } from '@mui/material';
 import styles from './index.module.css';
 
 import ribbons from '../../assets/images/ribbons.svg';
-import main from '../../assets/images/main.svg';
+import main from '../../assets/images/main.webp';
 import burger from '../../assets/images/burger.svg';
 import drawerBurger from '../../assets/images/drawer-burger.svg';
 import tg from '../../assets/images/white-tg.svg';

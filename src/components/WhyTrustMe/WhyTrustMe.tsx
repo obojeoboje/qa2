@@ -1,6 +1,6 @@
 import styles from './index.module.css';
 
-import happy from '../../assets/images/happy.svg';
+import happy from '../../assets/images/happy.webp';
 import star from '../../assets/images/star-1.svg';
 
 const WhyTrustMe = () => {
