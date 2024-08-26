@@ -150,6 +150,12 @@
   }
 }
 
+@media all and (max-width: 730px) {
+  .card {
+    flex: none;
+  }
+}
+
 @media all and (max-width: 645px) {
   .whosGood h3 {
     font-size: 36px;
@@ -158,6 +164,17 @@
   .card {
     width: 100% !important;
     flex: none;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .card {
+    padding: 5px 5px 50px 5px;
+  }
+
+  .imageContainer img {
+    width: 290px;
+    height: 290px;
   }
 }
 

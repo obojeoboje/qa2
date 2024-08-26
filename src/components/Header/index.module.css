@@ -243,4 +243,19 @@
   .rightInfo {
     width: 100%;
   }
+
+  .ribbons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ribbons > img {
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .mainContent h1 {
+    font-size: 32px;
+  }
 }

@@ -39,11 +39,11 @@ const data = [
 
 const WhosGoodFor = () => {
   const [isOpen, setIsOpen] = useState<number | null>(null);
-  const [mobile, setMobile] = useState(window.innerWidth <= 480);
+  const [mobile, setMobile] = useState(window.innerWidth <= 730);
 
   useEffect(() => {
     const handleResize = () => {
-      setMobile(window.innerWidth <= 480);
+      setMobile(window.innerWidth <= 730);
     };
 
     window.addEventListener('resize', handleResize);

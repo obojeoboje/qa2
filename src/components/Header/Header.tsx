@@ -12,11 +12,11 @@ import star from '../../assets/images/drawer-star.svg';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [mobile, setMobile] = useState(window.innerWidth <= 480);
+  const [mobile, setMobile] = useState(window.innerWidth <= 645);
 
   useEffect(() => {
     const handleResize = () => {
-      setMobile(window.innerWidth <= 480);
+      setMobile(window.innerWidth <= 645);
     };
 
     window.addEventListener('resize', handleResize);

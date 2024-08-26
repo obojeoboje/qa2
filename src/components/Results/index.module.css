@@ -140,9 +140,13 @@
   }
 }
 
-@media all and (max-width: 645px) {
+@media all and (max-width: 730px) {
   .card {
-    width: 420px;
+    width: 100%;
+  }
+
+  .mySwiper {
+    padding: 50px 40px;
   }
 }
 

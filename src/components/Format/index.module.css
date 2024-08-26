@@ -92,6 +92,13 @@
   }
 }
 
+@media all and (max-width: 730px) {
+  .formatBtn button a {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media all and (max-width: 645px) {
   .formatLeft h3 {
     font-size: 36px;
@@ -107,10 +114,6 @@
 
   .formatBtn button {
     width: 100%;
-  }
-
-  .formatBtn button a {
-    justify-content: center;
   }
 }
 

@@ -11,11 +11,11 @@ import tg from '../../assets/images/telegram.svg';
 
 const Format = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
-  const [mobile, setMobile] = useState(window.innerWidth <= 480);
+  const [mobile, setMobile] = useState(window.innerWidth <= 645);
 
   useEffect(() => {
     const handleResize = () => {
-      setMobile(window.innerWidth <= 480);
+      setMobile(window.innerWidth <= 645);
     };
 
     window.addEventListener('resize', handleResize);
@@ -42,12 +42,12 @@ const Format = () => {
 
         {!mobile && (
           <div className={styles.formatBtn}>
-            <a href="https://t.me/Polynskih_channel" target="_blank">
-              <button>
+            <button>
+              <a href="https://t.me/Polynskih_channel" target="_blank">
                 Мой канал в телеграм
                 <img src={tg} alt="telegram" width="30" height="30" />{' '}
-              </button>
-            </a>
+              </a>
+            </button>
           </div>
         )}
       </div>

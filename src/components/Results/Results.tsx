@@ -113,12 +113,12 @@ const data = [
 
 const Results = () => {
   const [table, setTable] = useState(window.innerWidth <= 960);
-  const [mobile, setMobile] = useState(window.innerWidth <= 480);
+  const [mobile, setMobile] = useState(window.innerWidth <= 730);
 
   useEffect(() => {
     const handleResize = () => {
       setTable(window.innerWidth <= 960);
-      setMobile(window.innerWidth <= 480);
+      setMobile(window.innerWidth <= 730);
     };
 
     window.addEventListener('resize', handleResize);
