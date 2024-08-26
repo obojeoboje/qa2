@@ -190,6 +190,7 @@
   }
 
   .imageBlock img {
-    top: 750px;
+    height: 450px;
+    top: 700px;
   }
 }
