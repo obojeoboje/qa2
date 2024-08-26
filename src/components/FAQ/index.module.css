@@ -24,6 +24,7 @@
   font-weight: 500;
   cursor: pointer;
   background-color: #fff;
+  color: #000;
 }
 
 .formatBtn button a {
@@ -102,6 +103,9 @@
 
   .formatBtn button {
     width: 100%;
+  }
+
+  .formatBtn button a {
     justify-content: center;
   }
 }

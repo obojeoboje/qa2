@@ -33,6 +33,7 @@
   border: none;
   cursor: pointer;
   background-color: #fff;
+  color: #000;
   text-align: center;
 }
 
@@ -68,6 +69,7 @@
   font-weight: 500;
   cursor: pointer;
   background-color: #fff;
+  color: #000;
   text-align: center;
 }
 
