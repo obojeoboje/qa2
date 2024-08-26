@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -7,10 +7,23 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 import styles from './index.module.css';
 
-import tg from '../../assets/images/telegram.webp';
+import tg from '../../assets/images/telegram.svg';
 
 const Faq = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
+  const [mobile, setMobile] = useState(window.innerWidth <= 480);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
@@ -23,12 +36,16 @@ const Faq = () => {
       <div className={styles.formatLeft}>
         <h3>FAQ</h3>
 
-        <div className={styles.formatBtn}>
-          <button>
-            Связаться со мной
-            <img src={tg} alt="telegram" width="30" height="30" />{' '}
-          </button>
-        </div>
+        {!mobile && (
+          <div className={styles.formatBtn}>
+            <button>
+              <a href=" https://t.me/Polynskih" target="_blank">
+                Связаться со мной
+                <img src={tg} alt="telegram" width="30" height="30" />{' '}
+              </a>
+            </button>
+          </div>
+        )}
       </div>
       <div className={styles.accordion}>
         <Accordion
@@ -51,8 +68,9 @@ const Faq = () => {
             Сколько длится обучение?
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            С нуля - 2-3 месяца После курса - 1-2 месяца Повышение грейда - до
+            месяца Зависит от вашего свободного времени и усилий. Чем их больше
+            - тем ближе оффер.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -75,8 +93,8 @@ const Faq = () => {
             Устроюсь на работу, что дальше?
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Испытательный срок длится первые 3 месяца. На протяжении этого срока
+            я буду на связи и помогу вам освоиться и пройти испытательный срок.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -99,8 +117,8 @@ const Faq = () => {
             На какую зарплату устроюсь?
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            В среднем 150 000₽, диапазон зарплат учеников от 100 000₽ до 220
+            000₽.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -123,8 +141,8 @@ const Faq = () => {
             Какой уровень знаний нужен для начала обучения?
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Обучение можно начинать с нуля. Если у вас уже есть какая-то база
+            знаний то обучение займет меньше времени.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -144,14 +162,24 @@ const Faq = () => {
             aria-controls="panel3-content"
             id="panel3-header"
           >
-            Есть ли поддержка после завершения обучения?
+            Есть ли рассрочка?
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Рассрочка есть. Необходимо нажать на кнопку "Купить тариф" в выборе
+            тарифа, у вас откроется окно оплаты с возможностью оформить
+            рассрочку.
           </AccordionDetails>
         </Accordion>
       </div>
+
+      {mobile && (
+        <div className={styles.formatBtn}>
+          <button>
+            Связаться со мной
+            <img src={tg} alt="telegram" width="30" height="30" />{' '}
+          </button>
+        </div>
+      )}
     </div>
   );
 };

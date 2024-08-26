@@ -1,4 +1,6 @@
 .reviews {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -60,13 +62,16 @@
   font-size: 16px;
   border: 1px solid #979797;
   border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cardHeader p a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
 }
 
 .cardContent p {
@@ -107,4 +112,74 @@
 .pagination {
   font-size: 32px;
   font-weight: 500;
+}
+
+@media all and (min-width: 1280px) {
+  .reviews {
+    gap: 10px;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .reviews {
+    flex-direction: column;
+  }
+
+  .reviewsTitle {
+    width: 100%;
+  }
+
+  .reviewsTitle h3 {
+    margin-bottom: 150px;
+  }
+
+  .reviewsContent {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .reviewsTitle {
+    padding: 50px 15px;
+  }
+
+  .reviewsTitle h3 {
+    font-size: 40px;
+  }
+
+  .reviewsTitle p {
+    font-size: 48px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .reviewsContent {
+    padding: 50px 15px;
+  }
+
+  .card {
+    padding: 45px !important;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .reviewsTitle h3 {
+    font-size: 32px;
+  }
+
+  .reviewsTitle p {
+    font-size: 32px;
+  }
+
+  .card {
+    padding: 30px 15px !important;
+  }
+
+  .cardName {
+    font-size: 16px !important;
+  }
+
+  .cardContent p {
+    font-size: 14px;
+  }
 }

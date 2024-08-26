@@ -8,11 +8,12 @@
 }
 
 .navbar {
+  max-width: 1440px;
+  margin: 0 auto 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 70px;
-  margin-bottom: 100px;
+  padding: 25px 0;
 }
 
 .navLeft {
@@ -39,6 +40,12 @@
   cursor: pointer;
 }
 
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 .navButton button {
   padding: 10px 30px;
   border: none;
@@ -47,7 +54,12 @@
   cursor: pointer;
   background-color: #9391f9;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  text-align: center;
+}
+
+.navButton img {
+  display: none;
 }
 
 .mainContent h1 {
@@ -104,4 +116,130 @@
   font-weight: 400;
   background-color: #fff;
   cursor: pointer;
+  text-align: center;
+}
+
+.drawer {
+  padding: 40px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.drawerBurger {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.drawerFirstBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  flex-grow: 1;
+}
+
+.drawerSecondBlock {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+.drawerBtn {
+  display: block;
+  background-color: #b1b0f7;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.drawerBtnWithIcon {
+  padding: 15px 10px 15px 20px;
+}
+
+.drawerBtnWithIcon a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drawerStar {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+.drawerFreeBtn {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .navList {
+    display: none;
+  }
+
+  .navButton img {
+    display: block;
+  }
+
+  .ribbons {
+    margin-bottom: 85px;
+  }
+
+  .info {
+    padding: 0 20px;
+  }
+
+  .leftInfo {
+    width: 50%;
+  }
+
+  .rightInfo {
+    width: 50%;
+  }
+
+  .navbar {
+    padding: 25px 15px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .drawerFreeBtn {
+    display: block;
+  }
+
+  .navButton button {
+    display: none;
+  }
+
+  .mainContent h1 {
+    font-size: 48px;
+    margin-bottom: 100px;
+  }
+
+  .info {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    gap: 30px;
+  }
+
+  .leftInfo {
+    width: 100%;
+  }
+
+  .rightInfo {
+    width: 100%;
+  }
 }

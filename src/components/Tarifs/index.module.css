@@ -1,6 +1,8 @@
 .tarifs {
+  max-width: 1440px;
+  margin: 0 auto;
   color: #000;
-  padding: 0 70px 200px;
+  padding: 0 50px 200px;
 }
 
 .tarifsTitle {
@@ -80,4 +82,87 @@
   background-color: #fff;
   font-size: 16px;
   font-weight: 500;
+}
+
+@media all and (min-width: 960px) {
+  .tarifs {
+    padding: 50px 0 200px;
+  }
+
+  .tarifsInfo {
+    gap: 10px;
+  }
+
+  .tarifsTitle {
+    padding: 0 15px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .tarifsTitle {
+    padding: 0 15px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .tarifs {
+    padding: 0 0 200px;
+  }
+
+  .tarifsTitleInfo h3 {
+    font-size: 40px;
+  }
+
+  .tarifsInfo {
+    gap: 10px;
+  }
+
+  .tarifsCardTitle h3 {
+    font-size: 40px;
+  }
+
+  .star {
+    right: -115px;
+    top: 2px;
+  }
+
+  .tarifsTitle {
+    padding: 0 15px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .tarifsTitle {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .tarifsInfo {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+
+  .tarifsCard {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .tarifsTitleInfo h3 {
+    font-size: 32px;
+  }
+
+  .tarifsTitleInfo p {
+    font-size: 14px;
+  }
+
+  .tarifsCardTitle h3 {
+    font-size: 32px;
+  }
+
+  .star {
+    right: -140px;
+  }
 }

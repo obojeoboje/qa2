@@ -13,14 +13,15 @@ const About = () => {
         </h3>
         <div className={styles.aboutText}>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum vLorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum vLorem ipsum
+            Я занимаюсь менторством больше года, у меня за спиной десятки
+            учеников с офферами в крупные и маленькие компании РФ. Так же я
+            занимаю позицию Lead QA Engineerв самой большой IT-компании в
+            России.
           </p>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum vLorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum vLorem ipsum
+            Я регулярно хожу на собеседования, а также провожу их сам, поэтому
+            знаю актуальные требования к кандидату на рынке сейчас и не лью
+            воду, а даю ученикам только то, что им необходимо.
           </p>
         </div>
       </div>

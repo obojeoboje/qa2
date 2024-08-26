@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -7,10 +7,23 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 import styles from './index.module.css';
 
-import tg from '../../assets/images/telegram.webp';
+import tg from '../../assets/images/telegram.svg';
 
 const Format = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
+  const [mobile, setMobile] = useState(window.innerWidth <= 480);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
@@ -27,12 +40,16 @@ const Format = () => {
           <br /> курсов
         </p>
 
-        <div className={styles.formatBtn}>
-          <button>
-            Мой канал в телеграм{' '}
-            <img src={tg} alt="telegram" width="30" height="30" />{' '}
-          </button>
-        </div>
+        {!mobile && (
+          <div className={styles.formatBtn}>
+            <button>
+              <a href="https://t.me/Polynskih_channel" target="_blank">
+                Мой канал в телеграм
+                <img src={tg} alt="telegram" width="30" height="30" />{' '}
+              </a>
+            </button>
+          </div>
+        )}
       </div>
       <div className={styles.accordion}>
         <Accordion
@@ -55,8 +72,9 @@ const Format = () => {
             Оценка знаний
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Проведем созвон чтобы оценить твой текущий статус. Если ты уже
+            что-то проходил то составим тебе индивидуальный план обучения. Если
+            ты с нуля то для этого есть готовый план.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -79,8 +97,8 @@ const Format = () => {
             Поддержка на испытательном сроке
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            В течение первых трех месяцев твоей работы я нахожусь на связи и
+            поддерживаю тебя. Испыталку пройти проще, чем ты думаешь.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -103,8 +121,9 @@ const Format = () => {
             Обучение
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Необходимые материалы нужно будет изучить и сделать ДЗ. По итогам
+            каждой темы есть срез теоретических вопросов. Если вдруг возникают
+            вопросы - созваниваемся.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -124,11 +143,10 @@ const Format = () => {
             aria-controls="panel4-content"
             id="panel4-header"
           >
-            Подготовка легенды и резюме
+            Подготовка резюме
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Готовим тебя к выходу на рынок, продумываем каждую мелочь.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -151,11 +169,21 @@ const Format = () => {
             Собеседования
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Отклики и прохождение собеседований. Фидбек по собесам, созвоны с
+            ответами на вопросы, доизучение материалов если нужно.
           </AccordionDetails>
         </Accordion>
       </div>
+      {mobile && (
+        <div className={styles.formatBtn}>
+          <button>
+            <a href="https://t.me/Polynskih_channel" target="_blank">
+              Мой канал в телеграм
+              <img src={tg} alt="telegram" width="30" height="30" />{' '}
+            </a>
+          </button>
+        </div>
+      )}
     </div>
   );
 };

@@ -20,19 +20,23 @@
   border: none;
   border-radius: 30px;
   padding: 10px 10px 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   background-color: #fff;
 }
 
+.formatBtn button a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .formatLeft h3 {
   font-size: 48px;
   font-weight: 500;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .formatLeft p {
@@ -64,4 +68,54 @@
   padding: 10px;
   box-sizing: content-box;
   color: #222222;
+}
+
+@media all and (max-width: 960px) {
+  .format {
+    padding: 70px 15px;
+    gap: 93px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .formatLeft h3 {
+    font-size: 40px;
+  }
+
+  .customAccordionSummary {
+    font-size: 20px !important;
+  }
+
+  .customAccordionText {
+    font-size: 16px !important;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .formatLeft h3 {
+    font-size: 36px;
+  }
+
+  .format {
+    flex-direction: column;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .formatBtn button {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .formatLeft h3 {
+    font-size: 32px;
+  }
+
+  .formatLeft p {
+    font-size: 14px;
+  }
 }

@@ -1,10 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+
 import SouthIcon from '@mui/icons-material/South';
 import NorthIcon from '@mui/icons-material/North';
+import WestIcon from '@mui/icons-material/West';
+import EastIcon from '@mui/icons-material/East';
 
-import tired from '../../assets/images/tired.webp';
-import smile from '../../assets/images/smile.webp';
-import sad from '../../assets/images/sad.webp';
+import tired from '../../assets/images/tired.svg';
+import smile from '../../assets/images/smile.svg';
+import sad from '../../assets/images/sad.svg';
 
 import styles from './index.module.css';
 
@@ -34,6 +39,19 @@ const data = [
 
 const WhosGoodFor = () => {
   const [isOpen, setIsOpen] = useState<number | null>(null);
+  const [mobile, setMobile] = useState(window.innerWidth <= 480);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleClick = (id: number) => {
     setIsOpen(id === isOpen ? null : id);
@@ -50,11 +68,30 @@ const WhosGoodFor = () => {
   };
 
   return (
-    <div className={styles.whosGood}>
-      <h3>Кому подойдет курс</h3>
-      <div className={styles.cardsContainer}>
+    <div className={styles.whosGood} id="whosGoodFor">
+      <div className={styles.whosGoodTitle}>
+        <h3>Кому подойдет курс</h3>
+        <div className={styles.navigationButtons}>
+          <button className={styles.prevButton}>
+            <WestIcon />
+          </button>
+          <button className={styles.nextButton}>
+            <EastIcon />
+          </button>
+        </div>
+      </div>
+      <Swiper
+        slidesPerView={mobile ? 1 : 2}
+        spaceBetween={mobile ? 20 : 10}
+        navigation={{
+          nextEl: `.${styles.nextButton}`,
+          prevEl: `.${styles.prevButton}`,
+        }}
+        modules={[Navigation]}
+        className={styles.cardsContainer}
+      >
         {data.map((item) => (
-          <div className={styles.card} key={item.id}>
+          <SwiperSlide className={styles.card} key={item.id}>
             <div className={styles.imageContainer}>
               <img src={item.image} alt={item.title} className={styles.image} />
             </div>
@@ -74,9 +111,9 @@ const WhosGoodFor = () => {
             >
               {isOpen ? <NorthIcon /> : <SouthIcon />}
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };

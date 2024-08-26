@@ -1,17 +1,21 @@
 import styles from './index.module.css';
 
-import star from '../../assets/images/star-2.webp';
+import star from '../../assets/images/star-2.svg';
 
 const Tarifs = () => {
   return (
-    <div className={styles.tarifs}>
+    <div className={styles.tarifs} id="tarifs">
       <div className={styles.tarifsTitle}>
         <div className={styles.tarifsTitleInfo}>
           <h3>Тарифы</h3>
           <p>Найди идеальный тариф, который точно подойдет тебе</p>
         </div>
         <div className={styles.tarifsTitleBtn}>
-          <button>Бесплатная консультация</button>
+          <button>
+            <a href="https://t.me/Polynskih" target="_blank">
+              Бесплатная консультация
+            </a>
+          </button>
         </div>
       </div>
       <div className={styles.tarifsInfo}>
@@ -39,7 +43,11 @@ const Tarifs = () => {
             <li>Поддержка на испытательном сроке</li>
           </ul>
           <div className={styles.tarifsCardBtn}>
-            <button>Купить тариф</button>
+            <button>
+              <a href="https://t.me/Polynskih" target="_blank">
+                Купить тариф
+              </a>
+            </button>
           </div>
         </div>
         <div
@@ -48,7 +56,7 @@ const Tarifs = () => {
         >
           <div
             className={styles.tarifsCardTitle}
-            style={{ marginBottom: '90px' }}
+            style={{ marginBottom: '130px' }}
           >
             <p>Оплатить сразу</p>
             <h3>90 000 ₽</h3>
@@ -62,7 +70,11 @@ const Tarifs = () => {
             <li>Поддержка на испытательном сроке</li>
           </ul>
           <div className={styles.tarifsCardBtn}>
-            <button>Купить тариф</button>
+            <button>
+              <a href="https://t.me/Polynskih" target="_blank">
+                Купить тариф
+              </a>
+            </button>
           </div>
         </div>
       </div>

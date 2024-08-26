@@ -1,6 +1,6 @@
 .footer {
   background-color: #010101;
-  padding: 70px;
+  padding: 70px 105px;
   display: flex;
   align-items: center;
   position: relative;
@@ -9,7 +9,7 @@
 }
 
 .firstBlock {
-  width: 40%;
+  width: 50%;
 }
 
 .firstBlock h3 {
@@ -33,10 +33,11 @@
   border: none;
   cursor: pointer;
   background-color: #fff;
+  text-align: center;
 }
 
 .secondBlock {
-  width: 40%;
+  width: 50%;
 }
 
 .secondBlock p {
@@ -61,34 +62,103 @@
 
 .btns button {
   padding: 10px 10px 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
   border: none;
   border-radius: 40px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   background-color: #fff;
+  text-align: center;
 }
 
-.imageBlock {
+.btns button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imageBlock img {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 4;
 }
 
-@media all and (min-width: 1920px) {
+@media all and (max-width: 960px) {
   .footer {
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    padding: 70px 15px;
   }
 
-  .secondBlock {
-    width: 50%;
+  .imageBlock img {
+    top: -265px;
   }
 
   .firstBlock {
-    width: 50%;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .secondBlock {
+    width: 100%;
+  }
+
+  .secondBlockContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .btns {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .footer {
+    padding: 70px 15px 500px;
+    overflow: hidden;
+    border-top-right-radius: 40px;
+  }
+
+  .secondBlockContent {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .imageBlock img {
+    top: 610px;
+  }
+
+  .firstBlock button {
+    width: 100%;
+  }
+
+  .secondBlock {
+    width: 100%;
+  }
+
+  .btns {
+    width: 100%;
+  }
+
+  .btns button {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .firstBlock p {
+    font-size: 14px;
+  }
+
+  .secondBlock p {
+    font-size: 14px;
+  }
+
+  br {
+    display: none;
   }
 }
