@@ -126,7 +126,6 @@
 
   .imageBlock img {
     width: 450px;
-    height: 450px;
     top: 510px;
   }
 
@@ -165,7 +164,6 @@
 @media all and (max-width: 540px) {
   .imageBlock img {
     width: 380px;
-    height: 380px;
     top: 620px;
   }
 }
@@ -190,7 +188,6 @@
   }
 
   .imageBlock img {
-    height: 450px;
     top: 700px;
   }
 }
