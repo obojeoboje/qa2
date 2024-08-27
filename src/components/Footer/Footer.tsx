@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
           <p>
             Развернутые отзывы с контактами авторов можно
-            <br /> найти здесь - IT Mentors (по тэгу @Polynskih или #Polynskih)
+            <br /> найти здесь - <a href="https://t.me/it_mentors" target="_blank">IT Mentors</a> (по тэгу #Polynskih или @Polynskih)
           </p>
           <p>
             ИП Привалов А.В. 
