@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import tg from '../../assets/images/telegram.svg';
 import footerBoy from '../../assets/images/footer-boy.webp';
@@ -62,9 +63,10 @@ const Footer = () => {
             <br /> найти здесь - <a href="https://t.me/it_mentors" target="_blank">IT Mentors</a> (по тэгу #Polynskih или @Polynskih)
           </p>
           <p>
-            ИП Привалов А.В. 
+            <br /> ИП Привалов А. В. 
             <br /> ИНН 860330503901
             <br /> ОГРНИП 324784700269944
+            <br /> <NavLink to="/offer" className={styles.offerLink}>Договор-оферта</NavLink>
           </p>
         </div>
       </div>

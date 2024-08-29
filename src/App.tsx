@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import About from './components/About/About';
 import Faq from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
@@ -8,20 +9,28 @@ import Reviews from './components/Reviews/Reviews';
 import Tarifs from './components/Tarifs/Tarifs';
 import WhosGoodFor from './components/WhosGoodFor/WhosGoodFor';
 import WhyTrustMe from './components/WhyTrustMe/WhyTrustMe';
+import Offer from './components/Offer/offer';
 
 function App() {
   return (
     <div>
-      <Header />
-      <About />
-      <WhyTrustMe />
-      <Results />
-      <Format />
-      <WhosGoodFor />
-      <Tarifs />
-      <Reviews />
-      <Faq />
-      <Footer />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Header />
+            <About />
+            <WhyTrustMe />
+            <Results />
+            <Format />
+            <WhosGoodFor />
+            <Tarifs />
+            <Reviews />
+            <Faq />
+            <Footer />
+          </>
+        } />
+        <Route path="/offer" element={<Offer />} />
+      </Routes>
     </div>
   );
 }
