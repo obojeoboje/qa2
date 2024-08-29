@@ -9,7 +9,7 @@ import Reviews from './components/Reviews/Reviews';
 import Tarifs from './components/Tarifs/Tarifs';
 import WhosGoodFor from './components/WhosGoodFor/WhosGoodFor';
 import WhyTrustMe from './components/WhyTrustMe/WhyTrustMe';
-import Offer from './components/Offer/offer';
+import Offer from './components/Offer/Offer';
 
 function App() {
   return (
