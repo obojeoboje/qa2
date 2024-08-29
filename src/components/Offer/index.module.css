@@ -1,0 +1,191 @@
+.header {
+	width: 100%;
+	background-color: #6462f1;
+	overflow: hidden;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+.navbar {
+	max-width: 1440px;
+	margin: 0 auto 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 0;
+}
+
+.navButton {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.navButton button {
+	padding: 10px 30px;
+	border: none;
+	border-radius: 30px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #9391f9;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.navButton img {
+	display: none;
+}
+
+.navLeft {
+	display: flex;
+	gap: 118px;
+	align-items: center;
+}
+
+.navLeft h2 {
+	font-size: 24px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.navList {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.offer {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	color: black;
+}
+
+.offerTitle {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: black;
+}
+
+.offerContent {
+	font-size: 16px;
+	line-height: 1.5;
+	color: black;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	margin-top: 30px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+ol,
+ul {
+	margin-bottom: 10px;
+}
+
+.indent {
+	margin-left: 20px;
+}
+
+.indent2 {
+	margin-left: 40px;
+}
+
+.indent3 {
+	margin-left: 60px;
+}
+
+li {
+	margin-left: 20px;
+}
+
+@media all and (max-width: 885px) {
+	.navList {
+		display: none;
+	}
+
+	.navButton img {
+		display: block;
+	}
+
+	.ribbons {
+		margin-bottom: 85px;
+	}
+
+	.info {
+		padding: 0 20px;
+	}
+
+	.leftInfo {
+		width: 50%;
+	}
+
+	.rightInfo {
+		width: 50%;
+	}
+
+	.navbar {
+		padding: 25px 15px;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.mainContent h1 {
+		margin-bottom: 40px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.info {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 15px;
+		gap: 30px;
+	}
+
+	.leftInfo {
+		width: 100%;
+	}
+
+	.rightInfo {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 645px) {
+	.drawerFreeBtn {
+		display: block;
+	}
+
+	.navButton button {
+		display: none;
+	}
+
+	.mainContent h1 {
+		font-size: 48px;
+	}
+
+	.ribbons {
+		display: flex;
+		justify-content: center;
+	}
+
+	.ribbons>img {
+		width: 1000px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.mainContent h1 {
+		font-size: 32px;
+	}
+}
