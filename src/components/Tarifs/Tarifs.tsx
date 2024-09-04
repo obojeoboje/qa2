@@ -44,7 +44,7 @@ const Tarifs = () => {
           </ul>
           <div className={styles.tarifsCardBtn}>
             <button>
-              <a href="https://t.me/Polynskih" target="_blank">
+              <a href="https://payform.ru/qf4T5QJ/" target="_blank">
                 Купить тариф
               </a>
             </button>
@@ -68,7 +68,7 @@ const Tarifs = () => {
           </ul>
           <div className={styles.tarifsCardBtn}>
             <button>
-              <a href="https://t.me/Polynskih" target="_blank">
+              <a href="https://payform.ru/l84VPWl/" target="_blank">
                 Купить тариф
               </a>
             </button>
