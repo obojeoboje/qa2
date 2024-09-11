@@ -67,6 +67,7 @@ const Footer = () => {
             <br /> ИНН 860330503901
             <br /> ОГРНИП 324784700269944
             <br /> <NavLink to="/offer" className={styles.offerLink}>Договор-оферта</NavLink>
+            <br /> <NavLink to="/policy" className={styles.offerLink}>Политика обработки персональных данных</NavLink>
           </p>
         </div>
       </div>
