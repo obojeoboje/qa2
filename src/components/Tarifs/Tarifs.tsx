@@ -28,9 +28,9 @@ const Tarifs = () => {
             className={styles.tarifsCardTitle}
             style={{ marginBottom: '40px' }}
           >
-            <p>Оплата после обучения</p>
+            <p style={{ marginBottom: '20px' }}>Основная оплата после обучения</p>
             <h3>
-              30 000 ₽ + 100%
+              30 000 ₽* + 100%
               <br /> от оффера
             </h3>
           </div>
@@ -74,6 +74,15 @@ const Tarifs = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className={styles.tarifsQuestion}>
+        <h3>Уверенность</h3>
+          <ul className={styles.tarifsQuestionList}>
+            <p>Платить ничего не нужно, а предоплата возвращается, если:</p>
+            <li>Не получится устроиться на работу</li>
+            <li>Найдешь работу с зарплатой ниже 100 000 ₽</li>
+            <li>Поймешь, что обучение не нравится, передумал, или это не твое в течение первых двух недель</li>
+          </ul>
       </div>
     </div>
   );
