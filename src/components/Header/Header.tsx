@@ -61,8 +61,8 @@ const Header = () => {
       </nav>
       <div className={styles.mainContent}>
         <h1>
-          Стань профи
-          <br /> в тестировании
+          Устройся в IT
+          <br /> за 2-3 месяца
         </h1>
       </div>
       <div className={styles.ribbons}>
