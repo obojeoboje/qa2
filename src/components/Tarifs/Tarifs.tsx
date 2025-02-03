@@ -56,7 +56,7 @@ const Tarifs = () => {
         >
           <div className={styles.tarifsCardTitle}>
             <p>Оплатить сразу</p>
-            <h3>90 000 ₽</h3>
+            <h3>120 000 ₽</h3>
           </div>
           <ul className={styles.tarifsCardList}>
             <li>Обучение согласно плану</li>
@@ -68,7 +68,7 @@ const Tarifs = () => {
           </ul>
           <div className={styles.tarifsCardBtn}>
             <button>
-              <a href="https://payform.ru/7t5o0HG/" target="_blank">
+              <a href="https://payform.ru/m26j9eg/" target="_blank">
                 Купить тариф
               </a>
             </button>
