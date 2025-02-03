@@ -30,7 +30,7 @@ const Tarifs = () => {
           >
             <p style={{ marginBottom: '20px' }}>Основная оплата после обучения</p>
             <h3>
-              30 000 ₽* + 100%
+              40 000 ₽* + 100%
               <br /> от оффера
             </h3>
           </div>
@@ -44,7 +44,7 @@ const Tarifs = () => {
           </ul>
           <div className={styles.tarifsCardBtn}>
             <button>
-              <a href="https://payform.ru/4w5o0G8/" target="_blank">
+              <a href="https://payform.ru/9p6j97I/" target="_blank">
                 Купить тариф
               </a>
             </button>
