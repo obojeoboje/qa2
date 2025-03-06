@@ -68,6 +68,8 @@ const Footer = () => {
             <br /> ОГРНИП 324784700269944
             <br /> <NavLink to="/offer" className={styles.offerLink}>Договор-оферта</NavLink>
             <br /> <NavLink to="/policy" className={styles.offerLink}>Политика обработки персональных данных</NavLink>
+            <br />
+            <br /> <a href="https://www.behance.net/the_dari_k" target="_blank">Дизайнер сайта</a>
           </p>
         </div>
       </div>
