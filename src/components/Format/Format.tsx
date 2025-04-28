@@ -94,11 +94,12 @@ const Format = () => {
             aria-controls="panel2-content"
             id="panel2-header"
           >
-            Поддержка на испытательном сроке
+            Обучение
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            В течение первых трех месяцев твоей работы я нахожусь на связи и
-            поддерживаю тебя. Испыталку пройти проще, чем ты думаешь.
+            Необходимые материалы нужно будет изучить и сделать ДЗ. По итогам
+            каждой темы есть срез теоретических вопросов. Если вдруг возникают
+            вопросы - созваниваемся.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -118,12 +119,10 @@ const Format = () => {
             aria-controls="panel3-content"
             id="panel3-header"
           >
-            Обучение
+            Подготовка резюме
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Необходимые материалы нужно будет изучить и сделать ДЗ. По итогам
-            каждой темы есть срез теоретических вопросов. Если вдруг возникают
-            вопросы - созваниваемся.
+            Готовим тебя к выходу на рынок, продумываем каждую мелочь.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -143,10 +142,11 @@ const Format = () => {
             aria-controls="panel4-content"
             id="panel4-header"
           >
-            Подготовка резюме
+            Собеседования
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Готовим тебя к выходу на рынок, продумываем каждую мелочь.
+            Отклики и прохождение собеседований. Фидбек по собесам, созвоны с
+            ответами на вопросы, доизучение материалов если нужно.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -166,11 +166,11 @@ const Format = () => {
             aria-controls="panel3-content"
             id="panel3-header"
           >
-            Собеседования
+            Поддержка на испытательном сроке
           </AccordionSummary>
           <AccordionDetails className={styles.customAccordionText}>
-            Отклики и прохождение собеседований. Фидбек по собесам, созвоны с
-            ответами на вопросы, доизучение материалов если нужно.
+            В течение первых трех месяцев твоей работы я нахожусь на связи и
+            поддерживаю тебя. Испыталку пройти проще, чем ты думаешь. Доступ к закрытому чату остается навсегда.
           </AccordionDetails>
         </Accordion>
       </div>
