@@ -27,25 +27,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* Новый отдельный блок для видео */}
-      <div className={styles.videoWrapper}>
-        <iframe
-          src="https://kinescope.io/embed/7yywKX7cPKnLkJ681hg4ui"
-          allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;"
-          frameBorder="0"
-          allowFullScreen
-          style={{
-            position: 'absolute',
-            width: '100%',
-            height: '100%',
-            top: 0,
-            left: 0,
-          }}
-        ></iframe>
-      </div>
-      
+      </div>    
     </div>
   );
 };
